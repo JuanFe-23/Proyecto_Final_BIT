@@ -88,7 +88,7 @@ flowchart LR
 |---|---|---|
 | **Regresión logística 1** | Escalados | Incluye la categoría `Unknown` |
 | **Random Forest** | Sin escalar | 300 árboles, profundidad máxima 5 y hoja mínima de 10 para limitar el sobreajuste |
-| **XGBoost** | Sin escalar | Sugerido por el profesor; hiperparámetros conservadores fijados de antemano |
+| **XGBoost** | Sin escalar | Modelo enfocado en datos categóricos; con hiperparámetros conservadores fijados de antemano |
 | **XGBoost ajustado** | Sin escalar | `RandomizedSearchCV`: 50 combinaciones, validación cruzada de 5 particiones, AUC-ROC como criterio |
 | **Regresión logística 2** | Escalados | Sin los pacientes con `Unknown` (quedan 375); se evalúa en una prueba de 75 pacientes |
 
